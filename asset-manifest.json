@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/test-lakes/static/css/main.5a3d87f0.css",
+    "main.js": "/test-lakes/static/js/main.8de26de8.js",
+    "static/js/592.c7c1628c.chunk.js": "/test-lakes/static/js/592.c7c1628c.chunk.js",
+    "static/media/Exo2-Bold.woff": "/test-lakes/static/media/Exo2-Bold.3e74deb86c18b034f847.woff",
+    "static/media/Exo2-Regular.woff": "/test-lakes/static/media/Exo2-Regular.ac35919c09b8b541f12a.woff",
+    "static/media/Exo2-Bold.woff2": "/test-lakes/static/media/Exo2-Bold.ae1d97e16596ec3e14b5.woff2",
+    "static/media/Exo2-Regular.woff2": "/test-lakes/static/media/Exo2-Regular.29e8d0d4ac4d280a6e51.woff2",
+    "index.html": "/test-lakes/index.html",
+    "main.5a3d87f0.css.map": "/test-lakes/static/css/main.5a3d87f0.css.map",
+    "main.8de26de8.js.map": "/test-lakes/static/js/main.8de26de8.js.map",
+    "592.c7c1628c.chunk.js.map": "/test-lakes/static/js/592.c7c1628c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a3d87f0.css",
+    "static/js/main.8de26de8.js"
+  ]
+}
