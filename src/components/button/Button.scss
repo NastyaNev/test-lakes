@@ -13,16 +13,20 @@
     @include button($blueColor, 16px, 0, 30px, white, bold, $mainTextSize, $mainTextSize);
 }
 
-.button__text {
+.button__content {
+    z-index: 2;
+    
+    &__text {
 
-    &_disable {
-        display: none;
+        &_disable {
+            display: none;
+        }
     }
-}
 
-.button__icon {
+    &__icon {
 
-    &_disable {
-        display: none;
+        &_disable {
+            display: none;
+        }
     }
 }

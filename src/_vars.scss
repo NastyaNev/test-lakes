@@ -52,6 +52,7 @@ $mainTextSize: 14px;
     font-size: $_font-size;
     line-height: $_line-height;
     cursor: pointer;
+    z-index: 0;
   
     &:after {
         content: "";
@@ -63,6 +64,7 @@ $mainTextSize: 14px;
         width: 10%;
         height: 10%;
         border-radius: $_border-radius;
+        z-index: 1;
     }
   
     &:hover {
