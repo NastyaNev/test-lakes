@@ -53,6 +53,49 @@
   }
 }
 
+.button-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  border: none;
+  background-color: #EDF3F7;
+  padding: 8px 9px;
+  border-radius: 40px;
+  color: none;
+  font-weight: none;
+  font-family: "Exo2";
+  font-size: none;
+  line-height: none;
+  cursor: pointer;
+  z-index: 0;
+}
+.button-arrow:after {
+  content: "";
+  background: #b8d0df;
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 10%;
+  height: 10%;
+  border-radius: 40px;
+  z-index: 1;
+}
+.button-arrow:hover {
+  background-color: #dbe7ef;
+  transition: all 0.3s ease-in-out;
+}
+.button-arrow:active:after {
+  opacity: 1;
+  transition: 0.1s;
+  padding-top: 90%;
+  padding-bottom: 90%;
+  padding-left: 90%;
+  padding-right: 90%;
+}
+
 .button-light-text {
   display: flex;
   justify-content: center;
@@ -142,6 +185,8 @@
 .button__content {
   z-index: 2;
   display: flex;
+  width: fit-content;
+  height: fit-content;
 }
 .button__content__text_disable {
   display: none;
