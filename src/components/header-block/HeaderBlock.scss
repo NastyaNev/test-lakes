@@ -1,0 +1,45 @@
+@import "../../vars";
+
+.header-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-area: header-block;
+
+    &__title-container {
+        @extend %flex-column;
+        gap: 5px;
+
+        &__title {
+            margin: 0;
+            @include boldText($bigTitle, $bigTitleHeight, $darkColor);
+        }
+
+        &__description {
+            margin: 0;
+            color: $lightColor;
+        }
+    }
+
+    &__price-part {
+        display: flex;
+        gap: 18px;
+
+        &__price-container {
+            @extend %flex-column;
+            gap: 5px;
+            align-items: flex-end;
+
+            &__price {
+                @include boldText($mainTextSize, $mainTextHeight, $darkColor);
+            }
+
+            &__amount {
+                color: $lightColor;
+            }
+        }
+
+    }
+
+
+}

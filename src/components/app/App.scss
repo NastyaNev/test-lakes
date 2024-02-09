@@ -1,0 +1,13 @@
+@import "../../vars";
+
+.main {
+    display: grid;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "header-block header-block"
+        "gallery gallery"
+        "about contacts";
+}

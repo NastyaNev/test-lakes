@@ -1,0 +1,28 @@
+@import "../../vars";
+
+.button-icon {
+    @include button($lightBackgroundColor, 9px, 9px, 14px, none, none, none, none);
+    height: fit-content;
+}
+
+.button-light-text {
+    @include button($lightBackgroundColor, 14px, 20px, 30px, $darkColor, normal, $mainTextSize, $mainTextSize);
+}
+
+.button-blue-text {
+    @include button($blueColor, 16px, 0, 30px, white, bold, $mainTextSize, $mainTextSize);
+}
+
+.button__text {
+
+    &_disable {
+        display: none;
+    }
+}
+
+.button__icon {
+
+    &_disable {
+        display: none;
+    }
+}

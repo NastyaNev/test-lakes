@@ -1,0 +1,81 @@
+// colors
+
+$lightColor: #BFCEDB;
+$darkColor: #3F586E;
+$blueColor: #00CDFF;
+$textColor: #2C2E3E;
+$whitecolor: #FFFFFF;
+
+$lightBackgroundColor: #EDF3F7;
+$borderColor: #E5EDF3;
+
+// text sizes
+
+$bigTitle: 18px;
+$bigTitleHeight: 22px;
+
+$mainTextHeight: 18px;
+$mainTextSize: 14px;
+
+// border-radius
+
+%border-radius {
+    border-radius: 20px;
+}
+
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin boldText($_size, $_height, $_color) {
+    font-size: $_size;
+    line-height: $_height;
+    font-weight: bold;
+    color: $_color;
+}
+
+@mixin button($_back-color, $_padding-tb, $_paddong-lr, $_border-radius, $_text-color, $_font-weight, $_font-size, $_line-height) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    background-color: $_back-color;
+    padding: $_padding-tb $_paddong-lr;
+    border-radius: $_border-radius;
+    color: $_text-color;
+    font-weight: $_font-weight;
+    font-family: "Exo2";
+    font-size: $_font-size;
+    line-height: $_line-height;
+    cursor: pointer;
+  
+    &:after {
+        content: "";
+        background:darken($_back-color, 15%);
+        display: block;
+        position: absolute;
+        opacity: 0;
+        transition: all 0.5s ease;
+        width: 10%;
+        height: 10%;
+        border-radius: $_border-radius;
+    }
+  
+    &:hover {
+        background-color: darken($_back-color, 5%);
+        transition: all 0.3s ease-in-out;
+    }
+  
+    &:active:after {
+        opacity: 1;
+        transition: 0.1s;
+        padding-top: 90%;
+        padding-bottom: 90%;
+        padding-left: 90%;
+        padding-right: 90%;
+    }
+  }

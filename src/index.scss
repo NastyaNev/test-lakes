@@ -1,15 +1,16 @@
 @import-normalize;
 @import './fonts/fonts.scss';
+@import './vars';
 
 body {
-  margin: 0;
+  margin: 37px (100vw / (1280/50)) 60px;
   font-family: 'Exo2', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: normal;
-  color: #2C2E3E;
+  color: $textColor;
   font-size: 14px;
   line-height: 18px;
 }
