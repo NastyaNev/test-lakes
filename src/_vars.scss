@@ -59,10 +59,14 @@ $mainTextSize: 14px;
     line-height: $_line-height;
     cursor: pointer;
     z-index: 0;
-  
-    &:after {
+
+    &:disabled {
+        cursor: default;
+    }
+
+    &:not(:disabled):after {
         content: "";
-        background:darken($_back-color, 15%);
+        background: darken($_back-color, 15%);
         display: block;
         position: absolute;
         opacity: 0;
@@ -72,13 +76,13 @@ $mainTextSize: 14px;
         border-radius: $_border-radius;
         z-index: 1;
     }
-  
-    &:hover {
+
+    &:not(:disabled):hover {
         background-color: darken($_back-color, 5%);
         transition: all 0.3s ease-in-out;
     }
-  
-    &:active:after {
+
+    &:not(:disabled):active:after {
         opacity: 1;
         transition: 0.1s;
         padding-top: 90%;
@@ -86,4 +90,4 @@ $mainTextSize: 14px;
         padding-left: 90%;
         padding-right: 90%;
     }
-  }
+}

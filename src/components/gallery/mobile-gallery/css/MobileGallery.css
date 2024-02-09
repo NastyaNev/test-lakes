@@ -13,7 +13,7 @@
   gap: 4px;
 }
 .mobile-gallery__preview-container__images-cover {
-  flex: 1 1 auto;
+  flex: 1 1 0;
 }
 .mobile-gallery__preview-container__images-cover__image {
   cursor: pointer;

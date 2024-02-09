@@ -17,7 +17,10 @@
   z-index: 0;
   height: fit-content;
 }
-.button-share:after {
+.button-share:disabled {
+  cursor: default;
+}
+.button-share:not(:disabled):after {
   content: "";
   background: #b8d0df;
   display: block;
@@ -29,11 +32,11 @@
   border-radius: 1.09375vw;
   z-index: 1;
 }
-.button-share:hover {
+.button-share:not(:disabled):hover {
   background-color: #dbe7ef;
   transition: all 0.3s ease-in-out;
 }
-.button-share:active:after {
+.button-share:not(:disabled):active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;
@@ -71,7 +74,10 @@
   cursor: pointer;
   z-index: 0;
 }
-.button-arrow:after {
+.button-arrow:disabled {
+  cursor: default;
+}
+.button-arrow:not(:disabled):after {
   content: "";
   background: #b8d0df;
   display: block;
@@ -83,11 +89,11 @@
   border-radius: 40px;
   z-index: 1;
 }
-.button-arrow:hover {
+.button-arrow:not(:disabled):hover {
   background-color: #dbe7ef;
   transition: all 0.3s ease-in-out;
 }
-.button-arrow:active:after {
+.button-arrow:not(:disabled):active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;
@@ -114,7 +120,10 @@
   cursor: pointer;
   z-index: 0;
 }
-.button-light-text:after {
+.button-light-text:disabled {
+  cursor: default;
+}
+.button-light-text:not(:disabled):after {
   content: "";
   background: #b8d0df;
   display: block;
@@ -126,11 +135,11 @@
   border-radius: 30px;
   z-index: 1;
 }
-.button-light-text:hover {
+.button-light-text:not(:disabled):hover {
   background-color: #dbe7ef;
   transition: all 0.3s ease-in-out;
 }
-.button-light-text:active:after {
+.button-light-text:not(:disabled):active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;
@@ -157,7 +166,10 @@
   cursor: pointer;
   z-index: 0;
 }
-.button-blue-text:after {
+.button-blue-text:disabled {
+  cursor: default;
+}
+.button-blue-text:not(:disabled):after {
   content: "";
   background: #0090b3;
   display: block;
@@ -169,11 +181,11 @@
   border-radius: 30px;
   z-index: 1;
 }
-.button-blue-text:hover {
+.button-blue-text:not(:disabled):hover {
   background-color: #00b9e6;
   transition: all 0.3s ease-in-out;
 }
-.button-blue-text:active:after {
+.button-blue-text:not(:disabled):active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;

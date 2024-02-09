@@ -19,8 +19,7 @@ function MobileGallery() {
     selector: ".mobile-gallery__navigation-wrapper__images__image",
   });
 
-  const mobileImages = images;
-  const mobilePreviewImages = images.slice(2, 5);
+  const mobileImages = images.slice(0, 3);
 
   return (
     <div className="mobile-gallery">
@@ -59,18 +58,29 @@ function MobileGallery() {
           </>
         )}
       </div>
-      <div className="mobile-gallery__preview-container">
-        {mobilePreviewImages.map((i, index) => (
-          <div className="mobile-gallery__preview-container__images-cover">
-            <img
-              key={index + 10}
-              src={i}
-              alt=""
-              className="mobile-gallery__preview-container__images-cover__image"
-            />
-          </div>
-        ))}
-      </div>
+      {loaded && instanceRef.current && (
+        <div className="mobile-gallery__preview-container">
+          {[
+            ...Array(instanceRef.current.track.details.slides.length).keys(),
+          ].map((idx) => {
+            return (
+              <div
+                key={idx}
+                className="mobile-gallery__preview-container__images-cover"
+                onClick={() => {
+                  instanceRef.current?.moveToIdx(idx);
+                }}
+              >
+                <img
+                  src={mobileImages[idx]}
+                  alt=""
+                  className="mobile-gallery__preview-container__images-cover__image"
+                />
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }

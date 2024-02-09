@@ -1,8 +1,12 @@
 import "./Button.scss";
 
-function Button({ text, icon, type, className, onClick }) {
+function Button({ text, icon, type, className, onClick, disabled }) {
   return (
-    <button className={`${type} ${className}`} onClick={onClick}>
+    <button
+      className={`${type} ${className}`}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <span className="button__content">
         <span
           className={
