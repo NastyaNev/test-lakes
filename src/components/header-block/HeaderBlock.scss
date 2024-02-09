@@ -10,6 +10,7 @@
         flex-direction: column;
         margin-top: -4px;
         gap: 10px;
+        @include marginsBtwBlocksMob();
     }
 
     &__title-container {

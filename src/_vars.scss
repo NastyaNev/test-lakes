@@ -23,6 +23,12 @@ $mainTextSize: 14px;
     border-radius: 20px;
 }
 
+//margins between blocks on mobile
+
+@mixin marginsBtwBlocksMob() {
+    margin-bottom: 20px;
+}
+
 
 %flex-column {
     display: flex;

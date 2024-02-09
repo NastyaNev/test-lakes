@@ -1,13 +1,16 @@
+@import "../../vars";
+
 .facts {
     grid-area: facts;
     display: flex;
     gap: 6px;
-    
+
     @media (max-width: 1179px) {
         flex-wrap: wrap;
     }
 
     @media (max-width: 767px) {
         justify-content: center;
+        @include marginsBtwBlocksMob();
     }
 }

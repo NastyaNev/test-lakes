@@ -20,7 +20,7 @@ function HeaderBlock() {
             38 участков
           </span>
         </div>
-        <Button icon={shareIcon} type="button-icon" />
+        <Button icon={shareIcon} type="button-share" />
       </div>
     </div>
   );

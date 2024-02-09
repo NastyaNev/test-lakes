@@ -11,5 +11,6 @@
 @media (max-width: 767px) {
   .facts {
     justify-content: center;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=Facts.css.map */

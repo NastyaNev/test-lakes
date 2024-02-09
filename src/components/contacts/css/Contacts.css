@@ -17,6 +17,11 @@
   white-space: nowrap;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .contacts {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 360px) {
   .contacts {
     width: 100%;

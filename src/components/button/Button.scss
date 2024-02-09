@@ -1,6 +1,6 @@
 @import "../../vars";
 
-.button-icon {
+.button-share {
     @include button($lightBackgroundColor, 9px, 9px, (100vw / (1280/14)), none, none, none, none);
     height: fit-content;
 

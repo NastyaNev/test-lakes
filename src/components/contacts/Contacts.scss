@@ -12,6 +12,10 @@
     white-space: nowrap;
     margin: 0 auto;
 
+    @media (max-width: 767px) {
+        @include marginsBtwBlocksMob();
+    }
+
     @media (max-width: 360px) {
         width: 100%;
     }

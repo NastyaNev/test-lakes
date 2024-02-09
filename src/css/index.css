@@ -26,6 +26,7 @@ body {
 @media (max-width: 767px) {
   body {
     margin: 20px 16px;
+    display: block;
   }
 }
 

@@ -1,4 +1,4 @@
-.button-icon {
+.button-share {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   z-index: 0;
   height: fit-content;
 }
-.button-icon:after {
+.button-share:after {
   content: "";
   background: #b8d0df;
   display: block;
@@ -29,11 +29,11 @@
   border-radius: 1.09375vw;
   z-index: 1;
 }
-.button-icon:hover {
+.button-share:hover {
   background-color: #dbe7ef;
   transition: all 0.3s ease-in-out;
 }
-.button-icon:active:after {
+.button-share:active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;
@@ -42,12 +42,12 @@
   padding-right: 90%;
 }
 @media (max-width: 1279px) {
-  .button-icon {
+  .button-share {
     padding: 0.703125vw;
   }
 }
 @media (max-width: 767px) {
-  .button-icon {
+  .button-share {
     padding: 5.5px;
     border-radius: 4px;
   }

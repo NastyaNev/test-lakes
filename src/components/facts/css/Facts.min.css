@@ -1,1 +1,1 @@
-.facts{grid-area:facts;display:flex;gap:6px}@media(max-width: 1179px){.facts{flex-wrap:wrap}}@media(max-width: 767px){.facts{justify-content:center}}/*# sourceMappingURL=Facts.min.css.map */
+.facts{grid-area:facts;display:flex;gap:6px}@media(max-width: 1179px){.facts{flex-wrap:wrap}}@media(max-width: 767px){.facts{justify-content:center;margin-bottom:20px}}/*# sourceMappingURL=Facts.min.css.map */
