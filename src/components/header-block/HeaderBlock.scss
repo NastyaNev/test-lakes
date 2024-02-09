@@ -30,6 +30,7 @@
     &__price-part {
         display: flex;
         gap: 18px;
+        align-items: center;
 
         &__price-container {
             @extend %flex-column;

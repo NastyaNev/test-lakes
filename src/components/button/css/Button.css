@@ -6,7 +6,7 @@
   position: relative;
   border: none;
   background-color: #EDF3F7;
-  padding: 0.703125vw 0.703125vw;
+  padding: 9px 9px;
   border-radius: 1.09375vw;
   color: none;
   font-weight: none;
@@ -40,6 +40,11 @@
   padding-bottom: 90%;
   padding-left: 90%;
   padding-right: 90%;
+}
+@media (max-width: 1279px) {
+  .button-icon {
+    padding: 0.703125vw;
+  }
 }
 @media (max-width: 767px) {
   .button-icon {
@@ -146,6 +151,8 @@
   height: 1.875vw;
   min-width: 13px;
   min-height: 13px;
+  max-width: 24px;
+  max-height: 24px;
 }
 .button__content__icon_disable {
   display: none;

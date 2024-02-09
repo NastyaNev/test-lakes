@@ -54,6 +54,8 @@
   cursor: pointer;
   position: relative;
   height: 24px;
+  display: flex;
+  align-items: center;
 }
 .fact__text-container__title__info_disabled {
   display: none;
@@ -67,6 +69,7 @@
   position: absolute;
   color: #3F586E;
   z-index: 1;
+  left: 26px;
 }
 .fact__text-container__title__info:hover .fact__text-container__title__info__tooltip {
   visibility: visible;

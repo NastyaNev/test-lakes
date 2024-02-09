@@ -1,8 +1,12 @@
 @import "../../vars";
 
 .button-icon {
-    @include button($lightBackgroundColor, (100vw / (1280/9)), (100vw / (1280/9)), (100vw / (1280/14)), none, none, none, none);
+    @include button($lightBackgroundColor, 9px, 9px, (100vw / (1280/14)), none, none, none, none);
     height: fit-content;
+
+    @media (max-width: 1279px) {
+        padding: (100vw / (1280/9));
+    }
 
     @media (max-width: 767px) {
         padding: 5.5px;
@@ -34,6 +38,8 @@
         height: calc(100vw / (1280/24));
         min-width: 13px;
         min-height: 13px;
+        max-width: 24px;
+        max-height: 24px;
 
         &_disable {
             display: none;

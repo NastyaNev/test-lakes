@@ -56,7 +56,7 @@ function About() {
           setOpen(!open);
         }}
       >
-        <span>Подробнее</span>
+        <span className="about__button__text">Подробнее</span>
         <img
           src={arrow}
           alt=""

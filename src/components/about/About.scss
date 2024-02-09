@@ -51,6 +51,10 @@
         color: $darkColor;
         align-items: center;
 
+        &__text {
+            height: 20px;
+        }
+
         &__arrow {
             &_open {
                 transform: rotate(-90deg);

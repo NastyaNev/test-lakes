@@ -33,6 +33,7 @@
 .header-block__price-part {
   display: flex;
   gap: 18px;
+  align-items: center;
 }
 .header-block__price-part__price-container {
   gap: 5px;

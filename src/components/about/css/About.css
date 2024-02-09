@@ -46,6 +46,9 @@
   color: #3F586E;
   align-items: center;
 }
+.about__button__text {
+  height: 20px;
+}
 .about__button__arrow_open {
   transform: rotate(-90deg);
 }/*# sourceMappingURL=About.css.map */
