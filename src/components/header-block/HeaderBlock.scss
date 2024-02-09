@@ -6,6 +6,12 @@
     justify-content: space-between;
     grid-area: header-block;
 
+    @media (max-width: 767px) {
+        flex-direction: column;
+        margin-top: -4px;
+        gap: 10px;
+    }
+
     &__title-container {
         @extend %flex-column;
         gap: 5px;
@@ -37,9 +43,15 @@
             &__amount {
                 color: $lightColor;
             }
+
+            @media (max-width: 767px) {
+                flex-direction: row;
+            }
         }
 
+        @media (max-width: 400px) {
+            justify-content: space-between;
+            gap: 10px;
+        }
     }
-
-
 }

@@ -20,6 +20,17 @@ body {
   color: #2C2E3E;
   font-size: 14px;
   line-height: 18px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  body {
+    margin: 20px 16px;
+  }
+}
+
+#root {
+  max-width: 1180px;
 }
 
 code {

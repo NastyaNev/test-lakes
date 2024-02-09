@@ -2,7 +2,19 @@
   display: grid;
   gap: 20px;
   display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header-block header-block" "gallery gallery" "about contacts";
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header-block header-block" "gallery gallery" "facts contacts" "about contacts";
+}
+@media (max-width: 1079px) {
+  .main {
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "header-block header-block" "gallery gallery" "facts contacts" "about about";
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=App.css.map */

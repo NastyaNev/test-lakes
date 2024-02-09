@@ -1,8 +1,13 @@
 @import "../../vars";
 
 .button-icon {
-    @include button($lightBackgroundColor, 9px, 9px, 14px, none, none, none, none);
+    @include button($lightBackgroundColor, (100vw / (1280/9)), (100vw / (1280/9)), (100vw / (1280/14)), none, none, none, none);
     height: fit-content;
+
+    @media (max-width: 767px) {
+        padding: 5.5px;
+        border-radius: 4px;
+    }
 }
 
 .button-light-text {
@@ -15,6 +20,7 @@
 
 .button__content {
     z-index: 2;
+    display: flex;
     
     &__text {
 
@@ -24,6 +30,10 @@
     }
 
     &__icon {
+        width: calc(100vw / (1280/24));
+        height: calc(100vw / (1280/24));
+        min-width: 13px;
+        min-height: 13px;
 
         &_disable {
             display: none;

@@ -9,6 +9,13 @@
   justify-content: space-between;
   grid-area: header-block;
 }
+@media (max-width: 767px) {
+  .header-block {
+    flex-direction: column;
+    margin-top: -4px;
+    gap: 10px;
+  }
+}
 .header-block__title-container {
   gap: 5px;
 }
@@ -39,4 +46,15 @@
 }
 .header-block__price-part__price-container__amount {
   color: #BFCEDB;
+}
+@media (max-width: 767px) {
+  .header-block__price-part__price-container {
+    flex-direction: row;
+  }
+}
+@media (max-width: 400px) {
+  .header-block__price-part {
+    justify-content: space-between;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=HeaderBlock.css.map */

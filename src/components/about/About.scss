@@ -2,62 +2,58 @@
 
 .about {
     grid-area: about;
+    @extend %flex-column;
+    gap: 20px;
+    margin-top: 10px;
 
-    &__facts-container {
-        display: flex;
-        gap: 6px;
-        
-        @media (max-width: 1179px) {
-            flex-wrap: wrap;
+    @media (max-width: 767px) {
+        margin-top: 0;
+    }
+
+    &__title {
+        margin: 0;
+        color: $darkColor;
+    }
+
+    &__text-cover {
+        &__text {
+            margin: 0;
+            max-height: 108px;
+            overflow: hidden;
+
+            @media (max-width: 360px) {
+                max-height: 306px;
+            }
+
+            &_open {
+                margin: 0;
+                overflow: visible;
+            }
+        }
+
+        &__dotts {
+
+            &_disabled {
+                display: none;
+            }
         }
     }
 
-    &__description {
-        @extend %flex-column;
-        gap: 20px;
-        margin-top: 30px;
+    &__button {
+        background: none;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        gap: 10px;
+        font-family: "Exo2";
+        font-size: $mainTextSize;
+        color: $darkColor;
+        align-items: center;
 
-        &__title {
-            margin: 0;
-            color: $darkColor;
-        }
-
-        &__text-cover {
-            &__text {
-                margin: 0;
-                max-height: 108px;
-                overflow: hidden;
-                
-                &_open {
-                    margin: 0;
-                    overflow: visible;
-                }
-            }
-
-            &__dotts {
-                
-                &_disabled {
-                    display: none;
-                }
-            }
-        }
-
-        &__button {
-            background: none;
-            padding: 0;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            gap: 10px;
-            font-family: "Exo2";
-            font-size: $mainTextSize;
-            color: $darkColor;
-            align-items: center;
-
-            &__arrow {
-                &_open {
-                    transform: rotate(-90deg);
-                }
+        &__arrow {
+            &_open {
+                transform: rotate(-90deg);
             }
         }
     }

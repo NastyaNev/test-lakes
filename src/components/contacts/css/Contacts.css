@@ -15,6 +15,12 @@
   width: fit-content;
   box-sizing: border-box;
   white-space: nowrap;
+  margin: 0 auto;
+}
+@media (max-width: 360px) {
+  .contacts {
+    width: 100%;
+  }
 }
 .contacts__title {
   font-weight: bold;
