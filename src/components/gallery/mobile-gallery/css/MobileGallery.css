@@ -4,13 +4,18 @@
 .mobile-gallery__navigation-wrapper {
   position: relative;
 }
-.mobile-gallery__navigation-wrapper__images__image {
+.mobile-gallery__navigation-wrapper__images-container {
+  height: 45.5vw;
+}
+.mobile-gallery__navigation-wrapper__images-container__image {
   border-radius: 10px;
   margin-bottom: 4px;
+  object-fit: cover;
 }
 .mobile-gallery__preview-container {
   display: flex;
   gap: 4px;
+  height: 15.5vw;
 }
 .mobile-gallery__preview-container__images-cover {
   flex: 1 1 0;

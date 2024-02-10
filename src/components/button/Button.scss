@@ -1,54 +1,96 @@
 @import "../../vars";
 
-.button-share {
-    @include button($lightBackgroundColor, 9px, 9px, (100vw / (1280/14)), none, none, none, none);
-    height: fit-content;
+%common-button-styles {
+    z-index: 2;
+    display: flex;
+}
+
+.button-share-icon {
+    @include button($_back-color: $lightBackgroundColor, $_padding-tb: 9px, $_padding-lr: 9px, $_border-radius: 14px, $_text-color: none, $_font-weight: none);
 
     @media (max-width: 1279px) {
         padding: (100vw / (1280/9));
+        border-radius: (100vw / (1280/14));
     }
 
     @media (max-width: 767px) {
         padding: 5.5px;
         border-radius: 4px;
     }
+
+    &__content {
+        @extend %common-button-styles;
+
+        &__icon {
+            width: calc(100vw / (1280/24));
+            height: calc(100vw / (1280/24));
+            min-width: 13px;
+            min-height: 13px;
+            max-width: 24px;
+            max-height: 24px;
+        }
+
+        &__text {
+            &_disable {
+                display: none;
+            }
+        }
+    }
 }
 
-.button-arrow {
-    @include button($lightBackgroundColor, 8px, 9px, 40px, none, none, none, none);
+.button-arrow-icon {
+    @include button($_back-color: $lightBackgroundColor, $_padding-tb: 6px, $_padding-lr: 10px, $_border-radius: 50px, $_text-color: none, $_font-weight: none);
+
+    @media (max-width: 550px) {
+        padding: 6px 9px;
+    }
+
+    &__content {
+        @extend %common-button-styles;
+
+        &__icon {
+            width: 8px;
+            height: 16px;
+
+            @media (max-width: 550px) {
+                width: 6px;
+                height: 12px;
+            }
+
+        }
+
+        &__text {
+            &_disable {
+                display: none;
+            }
+        }
+    }
 }
 
 .button-light-text {
-    @include button($lightBackgroundColor, 14px, 20px, 30px, $darkColor, normal, $mainTextSize, $mainTextSize);
+    @include button($_back-color: $lightBackgroundColor, $_padding-tb: 14px, $_padding-lr: 18px, $_border-radius: 30px, $_text-color: $darkColor, $_font-weight: normal);
+
+    &__content {
+        @extend %common-button-styles;
+
+        &__icon {
+            &_disable {
+                display: none;
+            }
+        }
+    }
 }
 
 .button-blue-text {
-    @include button($blueColor, 16px, 0, 30px, white, bold, $mainTextSize, $mainTextSize);
-}
+    @include button($_back-color: $blueColor, $_padding-tb: 14px, $_padding-lr: 0, $_border-radius: 30px, $_text-color: white, $_font-weight: bold);
 
-.button__content {
-    z-index: 2;
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    
-    &__text {
+    &__content {
+        @extend %common-button-styles;
 
-        &_disable {
-            display: none;
-        }
-    }
-
-    &__icon {
-        width: calc(100vw / (1280/24));
-        height: calc(100vw / (1280/24));
-        min-width: 13px;
-        min-height: 13px;
-        max-width: 24px;
-        max-height: 24px;
-
-        &_disable {
-            display: none;
+        &__icon {
+            &_disable {
+                display: none;
+            }
         }
     }
 }

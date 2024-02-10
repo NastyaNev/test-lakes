@@ -13,7 +13,7 @@
   .header-block {
     flex-direction: column;
     margin-top: -4px;
-    gap: 10px;
+    gap: 8px;
     margin-bottom: 20px;
   }
 }
@@ -26,6 +26,11 @@
   line-height: 22px;
   font-weight: bold;
   color: #3F586E;
+}
+@media (max-width: 767px) {
+  .header-block__title-container__title {
+    line-height: 28px;
+  }
 }
 .header-block__title-container__description {
   margin: 0;
@@ -41,8 +46,6 @@
   align-items: flex-end;
 }
 .header-block__price-part__price-container__price {
-  font-size: 14px;
-  line-height: 18px;
   font-weight: bold;
   color: #3F586E;
 }
@@ -54,7 +57,7 @@
     flex-direction: row;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .header-block__price-part {
     justify-content: space-between;
     gap: 10px;

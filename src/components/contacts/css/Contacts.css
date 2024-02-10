@@ -22,7 +22,7 @@
     margin-bottom: 20px;
   }
 }
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .contacts {
     width: 100%;
   }
@@ -36,11 +36,11 @@
   color: #BFCEDB;
 }
 .contacts__phone-number {
-  color: #BFCEDB;
   margin: 2px 0 20px 0;
+  color: #BFCEDB;
 }
 .contacts__phone-number__number {
-  color: #00CDFF;
   font-weight: bold;
+  color: #00CDFF;
   margin-right: 5px;
 }/*# sourceMappingURL=Contacts.css.map */

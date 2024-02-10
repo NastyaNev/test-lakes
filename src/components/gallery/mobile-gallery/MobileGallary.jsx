@@ -16,7 +16,7 @@ function MobileGallery() {
     created() {
       setLoaded(true);
     },
-    selector: ".mobile-gallery__navigation-wrapper__images__image",
+    selector: ".mobile-gallery__navigation-wrapper__images-container__image",
   });
 
   const mobileImages = images.slice(0, 3);
@@ -25,7 +25,7 @@ function MobileGallery() {
     <div className="mobile-gallery">
       <div className="mobile-gallery__navigation-wrapper">
         <div
-          className="keen-slider mobile-gallery__navigation-wrapper__images"
+          className="keen-slider mobile-gallery__navigation-wrapper__images-container"
           ref={sliderRef}
         >
           {mobileImages.map((i, index) => (
@@ -33,7 +33,7 @@ function MobileGallery() {
               key={index}
               src={i}
               alt=""
-              className="mobile-gallery__navigation-wrapper__images__image"
+              className="mobile-gallery__navigation-wrapper__images-container__image"
             />
           ))}
         </div>

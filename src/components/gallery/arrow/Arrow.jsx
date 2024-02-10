@@ -1,6 +1,6 @@
 import Button from "../../button/Button";
 import "./Arrow.scss";
-import arrowRight from "../../../images/icons/Arrow.svg";
+import arrowRight from "../../../images/icons/ArrowRight.svg";
 import arrowLeft from "../../../images/icons/ArrowLeft.svg";
 
 function Arrow(props) {
@@ -9,7 +9,7 @@ function Arrow(props) {
   return (
     <Button
       icon={props.left ? arrowLeft : arrowRight}
-      type="button-arrow"
+      type="button-arrow-icon"
       onClick={props.onClick}
       className={`arrow ${
         props.left ? "arrow-left" : "arrow-right"

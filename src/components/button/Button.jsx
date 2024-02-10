@@ -7,10 +7,10 @@ function Button({ text, icon, type, className, onClick, disabled }) {
       onClick={onClick}
       disabled={disabled}
     >
-      <span className="button__content">
+      <span className={`${type}__content`}>
         <span
           className={
-            text ? "button__content__text" : "button__content__text_disable"
+            text ? `${type}__content__text` : `${type}__content__text_disable`
           }
         >
           {text}
@@ -19,7 +19,7 @@ function Button({ text, icon, type, className, onClick, disabled }) {
           src={icon}
           alt=""
           className={
-            icon ? "button__content__icon" : "button__content__icon_disable"
+            icon ? `${type}__content__icon` : `${type}__content__icon_disable`
           }
         />
       </span>

@@ -6,14 +6,14 @@
 }
 
 .arrow-left {
-  left: 5px;
+  left: 10px;
 }
 
 .arrow-right {
   left: auto;
-  right: 5px;
+  right: 10px;
 }
 
 .arrow-disabled {
-  background-color: #a6c4d8;
+  background-color: rgb(157, 168, 183);
 }/*# sourceMappingURL=Arrow.css.map */

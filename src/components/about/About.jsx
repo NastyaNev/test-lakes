@@ -1,5 +1,5 @@
 import "./About.scss";
-import arrow from "../../images/icons/Vector 9.svg";
+import arrow from "../../images/icons/ArrowRight.svg";
 import { useState } from "react";
 
 function About() {

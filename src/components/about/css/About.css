@@ -15,12 +15,16 @@
 }
 .about__title {
   margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
   color: #3F586E;
 }
 .about__text-cover__text {
   margin: 0;
   max-height: 108px;
   overflow: hidden;
+  line-height: 18px;
 }
 @media (max-width: 360px) {
   .about__text-cover__text {
@@ -30,6 +34,9 @@
 .about__text-cover__text_open {
   margin: 0;
   overflow: visible;
+}
+.about__text-cover__dotts {
+  line-height: 25px;
 }
 .about__text-cover__dotts_disabled {
   display: none;
@@ -45,6 +52,11 @@
   font-size: 14px;
   color: #3F586E;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .about__button {
+    margin-top: -16px;
+  }
 }
 .about__button__text {
   height: 20px;

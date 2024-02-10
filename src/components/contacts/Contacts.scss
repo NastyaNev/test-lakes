@@ -16,13 +16,12 @@
         @include marginsBtwBlocksMob();
     }
 
-    @media (max-width: 360px) {
+    @media (max-width: 500px) {
         width: 100%;
     }
 
     &__title {
-        font-weight: bold;
-        color: $darkColor;
+        @include boldSmallText();
         margin-bottom: 2px;
     }
 
@@ -31,12 +30,11 @@
     }
 
     &__phone-number {
-        color: $lightColor;
         margin: 2px 0 20px 0;
+        color: $lightColor;
 
         &__number {
-            color: $blueColor;
-            font-weight: bold;
+            @include boldSmallText($_color: $blueColor);
             margin-right: 5px;
         }
     }

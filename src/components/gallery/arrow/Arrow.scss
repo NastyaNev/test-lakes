@@ -8,14 +8,14 @@
 }
 
 .arrow-left {
-    left: 5px;
+    left: 10px;
 }
 
 .arrow-right {
     left: auto;
-    right: 5px;
+    right: 10px;
 }
 
 .arrow-disabled {
-    background-color: darken($lightBackgroundColor, 20%);
+    background-color: rgb(157, 168, 183);
 }

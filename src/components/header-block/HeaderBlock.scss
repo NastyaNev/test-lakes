@@ -9,7 +9,7 @@
     @media (max-width: 767px) {
         flex-direction: column;
         margin-top: -4px;
-        gap: 10px;
+        gap: 8px;
         @include marginsBtwBlocksMob();
     }
 
@@ -19,7 +19,11 @@
 
         &__title {
             margin: 0;
-            @include boldText($bigTitle, $bigTitleHeight, $darkColor);
+            @include boldBigText();
+
+            @media (max-width: 767px) {
+                line-height: 28px;
+            }
         }
 
         &__description {
@@ -39,7 +43,7 @@
             align-items: flex-end;
 
             &__price {
-                @include boldText($mainTextSize, $mainTextHeight, $darkColor);
+                @include boldSmallText();
             }
 
             &__amount {
@@ -51,7 +55,7 @@
             }
         }
 
-        @media (max-width: 400px) {
+        @media (max-width: 500px) {
             justify-content: space-between;
             gap: 10px;
         }

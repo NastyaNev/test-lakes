@@ -7,13 +7,13 @@ function DesktopGallery() {
   
     return (
       <div className="desktop-gallery">
-        <div className="desktop-gallery__pictures-container">
+        <div className="desktop-gallery__images-container">
           {desktopImages.map((i, index) => (
             <img
               key={index}
               src={i}
               alt=""
-              className="desktop-gallery__pictures-container__image"
+              className="desktop-gallery__images-container__image"
             />
           ))}
         </div>

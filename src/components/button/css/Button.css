@@ -1,4 +1,9 @@
-.button-share {
+.button-blue-text__content, .button-light-text__content, .button-arrow-icon__content, .button-share-icon__content {
+  z-index: 2;
+  display: flex;
+}
+
+.button-share-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,20 +12,19 @@
   border: none;
   background-color: #EDF3F7;
   padding: 9px 9px;
-  border-radius: 1.09375vw;
+  border-radius: 14px;
   color: none;
   font-weight: none;
   font-family: "Exo2";
-  font-size: none;
-  line-height: none;
+  font-size: 14px;
+  line-height: 14px;
   cursor: pointer;
   z-index: 0;
-  height: fit-content;
 }
-.button-share:disabled {
+.button-share-icon:disabled {
   cursor: default;
 }
-.button-share:not(:disabled):after {
+.button-share-icon:not(:disabled):after {
   content: "";
   background: #b8d0df;
   display: block;
@@ -29,14 +33,14 @@
   transition: all 0.5s ease;
   width: 10%;
   height: 10%;
-  border-radius: 1.09375vw;
+  border-radius: 14px;
   z-index: 1;
 }
-.button-share:not(:disabled):hover {
+.button-share-icon:not(:disabled):hover {
   background-color: #dbe7ef;
   transition: all 0.3s ease-in-out;
 }
-.button-share:not(:disabled):active:after {
+.button-share-icon:not(:disabled):active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;
@@ -45,18 +49,30 @@
   padding-right: 90%;
 }
 @media (max-width: 1279px) {
-  .button-share {
+  .button-share-icon {
     padding: 0.703125vw;
+    border-radius: 1.09375vw;
   }
 }
 @media (max-width: 767px) {
-  .button-share {
+  .button-share-icon {
     padding: 5.5px;
     border-radius: 4px;
   }
 }
+.button-share-icon__content__icon {
+  width: 1.875vw;
+  height: 1.875vw;
+  min-width: 13px;
+  min-height: 13px;
+  max-width: 24px;
+  max-height: 24px;
+}
+.button-share-icon__content__text_disable {
+  display: none;
+}
 
-.button-arrow {
+.button-arrow-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,20 +80,20 @@
   position: relative;
   border: none;
   background-color: #EDF3F7;
-  padding: 8px 9px;
-  border-radius: 40px;
+  padding: 6px 10px;
+  border-radius: 50px;
   color: none;
   font-weight: none;
   font-family: "Exo2";
-  font-size: none;
-  line-height: none;
+  font-size: 14px;
+  line-height: 14px;
   cursor: pointer;
   z-index: 0;
 }
-.button-arrow:disabled {
+.button-arrow-icon:disabled {
   cursor: default;
 }
-.button-arrow:not(:disabled):after {
+.button-arrow-icon:not(:disabled):after {
   content: "";
   background: #b8d0df;
   display: block;
@@ -86,20 +102,38 @@
   transition: all 0.5s ease;
   width: 10%;
   height: 10%;
-  border-radius: 40px;
+  border-radius: 50px;
   z-index: 1;
 }
-.button-arrow:not(:disabled):hover {
+.button-arrow-icon:not(:disabled):hover {
   background-color: #dbe7ef;
   transition: all 0.3s ease-in-out;
 }
-.button-arrow:not(:disabled):active:after {
+.button-arrow-icon:not(:disabled):active:after {
   opacity: 1;
   transition: 0.1s;
   padding-top: 90%;
   padding-bottom: 90%;
   padding-left: 90%;
   padding-right: 90%;
+}
+@media (max-width: 550px) {
+  .button-arrow-icon {
+    padding: 6px 9px;
+  }
+}
+.button-arrow-icon__content__icon {
+  width: 8px;
+  height: 16px;
+}
+@media (max-width: 550px) {
+  .button-arrow-icon__content__icon {
+    width: 6px;
+    height: 12px;
+  }
+}
+.button-arrow-icon__content__text_disable {
+  display: none;
 }
 
 .button-light-text {
@@ -110,7 +144,7 @@
   position: relative;
   border: none;
   background-color: #EDF3F7;
-  padding: 14px 20px;
+  padding: 14px 18px;
   border-radius: 30px;
   color: #3F586E;
   font-weight: normal;
@@ -147,6 +181,9 @@
   padding-left: 90%;
   padding-right: 90%;
 }
+.button-light-text__content__icon_disable {
+  display: none;
+}
 
 .button-blue-text {
   display: flex;
@@ -156,7 +193,7 @@
   position: relative;
   border: none;
   background-color: #00CDFF;
-  padding: 16px 0;
+  padding: 14px 0;
   border-radius: 30px;
   color: white;
   font-weight: bold;
@@ -193,24 +230,6 @@
   padding-left: 90%;
   padding-right: 90%;
 }
-
-.button__content {
-  z-index: 2;
-  display: flex;
-  width: fit-content;
-  height: fit-content;
-}
-.button__content__text_disable {
-  display: none;
-}
-.button__content__icon {
-  width: 1.875vw;
-  height: 1.875vw;
-  min-width: 13px;
-  min-height: 13px;
-  max-width: 24px;
-  max-height: 24px;
-}
-.button__content__icon_disable {
+.button-blue-text__content__icon_disable {
   display: none;
 }/*# sourceMappingURL=Button.css.map */

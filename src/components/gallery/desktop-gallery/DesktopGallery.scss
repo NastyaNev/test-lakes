@@ -4,11 +4,15 @@
     position: relative;
     grid-area: gallery;
 
-    &__pictures-container {
+    &__images-container {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 25.7% 25.7% 1fr 1fr;
+        grid-template-rows: repeat(2, 194px);
         gap: 6px;
+
+        @media (max-width: 1279px) {
+            grid-template-rows: repeat(2, 15vw);
+        }
 
         &__image {
             @extend %border-radius;

@@ -11,10 +11,10 @@ $borderColor: #E5EDF3;
 
 // text sizes
 
-$bigTitle: 18px;
-$bigTitleHeight: 22px;
+// $bigTitle: 18px;
+// $bigTitleHeight: 22px;
 
-$mainTextHeight: 18px;
+$mainTextHeight: 18.5px;
 $mainTextSize: 14px;
 
 // border-radius
@@ -29,20 +29,26 @@ $mainTextSize: 14px;
     margin-bottom: 20px;
 }
 
+// display: flex, fkex-direction: column
 
 %flex-column {
     display: flex;
     flex-direction: column;
 }
 
-@mixin boldText($_size, $_height, $_color) {
-    font-size: $_size;
-    line-height: $_height;
+@mixin boldBigText() {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    color: $darkColor;
+}
+
+@mixin boldSmallText($_color: $darkColor) {
     font-weight: bold;
     color: $_color;
 }
 
-@mixin button($_back-color, $_padding-tb, $_paddong-lr, $_border-radius, $_text-color, $_font-weight, $_font-size, $_line-height) {
+@mixin button($_back-color, $_padding-tb, $_padding-lr, $_border-radius, $_text-color, $_font-weight) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,13 +56,13 @@ $mainTextSize: 14px;
     position: relative;
     border: none;
     background-color: $_back-color;
-    padding: $_padding-tb $_paddong-lr;
+    padding: $_padding-tb $_padding-lr;
     border-radius: $_border-radius;
     color: $_text-color;
     font-weight: $_font-weight;
     font-family: "Exo2";
-    font-size: $_font-size;
-    line-height: $_line-height;
+    font-size: $mainTextSize;
+    line-height: $mainTextSize;
     cursor: pointer;
     z-index: 0;
 

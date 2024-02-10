@@ -12,7 +12,7 @@
 
     &__title {
         margin: 0;
-        color: $darkColor;
+        @include boldBigText();
     }
 
     &__text-cover {
@@ -20,6 +20,7 @@
             margin: 0;
             max-height: 108px;
             overflow: hidden;
+            line-height: 18px;
 
             @media (max-width: 360px) {
                 max-height: 306px;
@@ -32,6 +33,7 @@
         }
 
         &__dotts {
+            line-height: 25px;
 
             &_disabled {
                 display: none;
@@ -50,6 +52,10 @@
         font-size: $mainTextSize;
         color: $darkColor;
         align-items: center;
+
+        @media (max-width: 767px) {
+            margin-top: -16px;
+        }
 
         &__text {
             height: 20px;
