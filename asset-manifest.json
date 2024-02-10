@@ -1,30 +1,29 @@
 {
   "files": {
-    "main.css": "/test-lakes/static/css/main.8f2134ca.css",
-    "main.js": "/test-lakes/static/js/main.9ec8ef4e.js",
+    "main.css": "/test-lakes/static/css/main.9fe2b33c.css",
+    "main.js": "/test-lakes/static/js/main.4aa906bb.js",
     "static/js/592.c7c1628c.chunk.js": "/test-lakes/static/js/592.c7c1628c.chunk.js",
-    "static/media/cam_01_00000 2.jpg": "/test-lakes/static/media/cam_01_00000 2.482858b1670b27fe5481.jpg",
-    "static/media/cam_01_00000 3.jpg": "/test-lakes/static/media/cam_01_00000 3.b511a611487932e6effb.jpg",
-    "static/media/cam_01_00000 5.jpg": "/test-lakes/static/media/cam_01_00000 5.4ad5f74f9613f33e60a9.jpg",
-    "static/media/2FP-2_4 1.jpg": "/test-lakes/static/media/2FP-2_4 1.f80ac8dd5b1db8e43bf8.jpg",
-    "static/media/cam_01_00000 4.jpg": "/test-lakes/static/media/cam_01_00000 4.91a63e50063c5a4f11ec.jpg",
+    "static/media/cam_01_00000 3.jpg": "/test-lakes/static/media/cam_01_00000 3.81574224de68e4136da3.jpg",
+    "static/media/cam_01_00000 2.jpg": "/test-lakes/static/media/cam_01_00000 2.2acd9f2e84ec8823f645.jpg",
+    "static/media/cam_01_00000 5.jpg": "/test-lakes/static/media/cam_01_00000 5.1df1da6d991d5cd15ce9.jpg",
+    "static/media/2FP-2_4 1.jpg": "/test-lakes/static/media/2FP-2_4 1.026883d1ca2733dba733.jpg",
+    "static/media/cam_01_00000 4.jpg": "/test-lakes/static/media/cam_01_00000 4.13546ec84c34e44e5251.jpg",
     "static/media/Exo2-Bold.woff": "/test-lakes/static/media/Exo2-Bold.3e74deb86c18b034f847.woff",
     "static/media/Exo2-Regular.woff": "/test-lakes/static/media/Exo2-Regular.ac35919c09b8b541f12a.woff",
     "static/media/Exo2-Bold.woff2": "/test-lakes/static/media/Exo2-Bold.ae1d97e16596ec3e14b5.woff2",
     "static/media/Exo2-Regular.woff2": "/test-lakes/static/media/Exo2-Regular.29e8d0d4ac4d280a6e51.woff2",
     "index.html": "/test-lakes/index.html",
-    "static/media/Share.svg": "/test-lakes/static/media/Share.1cee42410e209ea1934fa576b0776883.svg",
+    "static/media/Share.svg": "/test-lakes/static/media/Share.d99b19a7527031673cf8ddee3f7b5bea.svg",
     "static/media/Highway.svg": "/test-lakes/static/media/Highway.53ed8707d92ce4acd2fee43ddce53be2.svg",
     "static/media/Info.svg": "/test-lakes/static/media/Info.c7e2b36c6ca751ad1b8ec7a001030da9.svg",
-    "static/media/Arrow.svg": "/test-lakes/static/media/Arrow.7baf078cd1bdacb033548b3d7b77f617.svg",
     "static/media/ArrowLeft.svg": "/test-lakes/static/media/ArrowLeft.719a6c17e761744cfb9eaf29a3342ac6.svg",
-    "static/media/Vector 9.svg": "/test-lakes/static/media/Vector 9.7baf078cd1bdacb033548b3d7b77f617.svg",
-    "main.8f2134ca.css.map": "/test-lakes/static/css/main.8f2134ca.css.map",
-    "main.9ec8ef4e.js.map": "/test-lakes/static/js/main.9ec8ef4e.js.map",
+    "static/media/ArrowRight.svg": "/test-lakes/static/media/ArrowRight.7baf078cd1bdacb033548b3d7b77f617.svg",
+    "main.9fe2b33c.css.map": "/test-lakes/static/css/main.9fe2b33c.css.map",
+    "main.4aa906bb.js.map": "/test-lakes/static/js/main.4aa906bb.js.map",
     "592.c7c1628c.chunk.js.map": "/test-lakes/static/js/592.c7c1628c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f2134ca.css",
-    "static/js/main.9ec8ef4e.js"
+    "static/css/main.9fe2b33c.css",
+    "static/js/main.4aa906bb.js"
   ]
 }
