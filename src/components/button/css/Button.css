@@ -54,7 +54,7 @@
     border-radius: 1.09375vw;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .button-share-icon {
     padding: 5.5px;
     border-radius: 4px;

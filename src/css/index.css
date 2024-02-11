@@ -23,7 +23,7 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   body {
     margin: 20px 16px;
     display: block;

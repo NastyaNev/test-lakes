@@ -17,6 +17,11 @@
     grid-template-rows: repeat(2, 15vw);
   }
 }
+@media (max-width: 800px) {
+  .desktop-gallery__images-container {
+    margin-bottom: 20px;
+  }
+}
 .desktop-gallery__images-container__image {
   cursor: pointer;
   object-fit: cover;

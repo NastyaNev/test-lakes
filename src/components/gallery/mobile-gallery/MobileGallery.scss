@@ -50,7 +50,7 @@
 //         grid-template-rows: repeat(2, 1fr);
 //         gap: 6px;
 
-//         @media (max-width: 767px) {
+//         @media (max-width: 800px) {
 //             grid-template-columns: repeat(3, 1fr);
 //             grid-template-rows: repeat(3, auto);
 //             gap: 4px;
@@ -59,7 +59,7 @@
 //         }
 
 //         &__image {
-//             @media (max-width: 767px) {
+//             @media (max-width: 800px) {
 //                 border-radius: 10px;
 //             }
 
@@ -70,7 +70,7 @@
 //                 grid-row-end: 3;
 //                 display: flex;
 
-//                 @media (max-width: 767px) {
+//                 @media (max-width: 800px) {
 //                     grid-column-start: 1;
 //                     grid-column-end: 4;
 //                     gap: 4px;

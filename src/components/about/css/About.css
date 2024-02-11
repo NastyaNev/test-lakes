@@ -7,10 +7,16 @@
   grid-area: about;
   gap: 20px;
   margin-top: 10px;
+  max-width: calc(100% - 300px);
 }
-@media (max-width: 767px) {
+@media (max-width: 1079px) {
   .about {
-    margin-top: 0;
+    max-width: unset;
+  }
+}
+@media (max-width: 800px) {
+  .about {
+    gap: 0;
   }
 }
 .about__title {
@@ -19,6 +25,11 @@
   line-height: 22px;
   font-weight: bold;
   color: #3F586E;
+}
+@media (max-width: 800px) {
+  .about__title {
+    margin-bottom: 20px;
+  }
 }
 .about__text-cover__text {
   margin: 0;
@@ -53,10 +64,13 @@
   color: #3F586E;
   align-items: center;
 }
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .about__button {
-    margin-top: -16px;
+    margin-top: 4px;
   }
+}
+.about__button_disabled {
+  display: none;
 }
 .about__button__text {
   height: 20px;

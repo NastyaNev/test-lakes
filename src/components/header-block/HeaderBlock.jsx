@@ -11,12 +11,12 @@ function HeaderBlock() {
           Московская область, Рузский городской округ, территория Рузская долина
         </p>
       </div>
-      <div className="header-block__price-part">
-        <div className="header-block__price-part__price-container">
-          <span className="header-block__price-part__price-container__price">
+      <div className="header-block__price-container">
+        <div className="header-block__price-container__text-block">
+          <span className="header-block__price-container__text-block__price">
             от 1 560 000 р.
           </span>
-          <span className="header-block__price-part__price-container__amount">
+          <span className="header-block__price-container__text-block__amount">
             38 участков
           </span>
         </div>

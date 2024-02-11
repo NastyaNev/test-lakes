@@ -6,7 +6,7 @@
     justify-content: space-between;
     grid-area: header-block;
 
-    @media (max-width: 767px) {
+    @media (max-width: 800px) {
         flex-direction: column;
         margin-top: -4px;
         gap: 8px;
@@ -16,12 +16,17 @@
     &__title-container {
         @extend %flex-column;
         gap: 5px;
+        max-width: 50%;
+
+        @media (max-width: 800px) {
+            max-width: unset;
+        }
 
         &__title {
             margin: 0;
             @include boldBigText();
 
-            @media (max-width: 767px) {
+            @media (max-width: 800px) {
                 line-height: 28px;
             }
         }
@@ -32,15 +37,16 @@
         }
     }
 
-    &__price-part {
+    &__price-container {
         display: flex;
         gap: 18px;
         align-items: center;
 
-        &__price-container {
+        &__text-block {
             @extend %flex-column;
             gap: 5px;
             align-items: flex-end;
+            max-width: 200px;
 
             &__price {
                 @include boldSmallText();
@@ -50,7 +56,7 @@
                 color: $lightColor;
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 800px) {
                 flex-direction: row;
             }
         }

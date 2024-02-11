@@ -2,15 +2,28 @@
   grid-area: facts;
   display: flex;
   gap: 6px;
+  height: fit-content;
 }
-@media (max-width: 1179px) {
+@media (max-width: 1279px) {
   .facts {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1079px) {
   .facts {
-    justify-content: center;
+    grid-template-columns: 1fr auto;
+  }
+}
+@media (max-width: 800px) {
+  .facts {
     margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .facts {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=Facts.css.map */

@@ -10,10 +10,13 @@
     width: fit-content;
     box-sizing: border-box;
     white-space: nowrap;
-    margin: 0 auto;
+    margin-left: auto;
 
-    @media (max-width: 767px) {
+
+    @media (max-width: 800px) {
         @include marginsBtwBlocksMob();
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (max-width: 500px) {

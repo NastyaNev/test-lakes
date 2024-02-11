@@ -3,7 +3,7 @@ import DesktopGallery from "./desktop-gallery/DesktopGallery";
 import MobileGallery from "./mobile-gallery/MobileGallary";
 
 function Gallery() {
-  const isSmallDevice = useMediaQuery("(max-width : 767px)");
+  const isSmallDevice = useMediaQuery("(max-width : 800px)");
 
   return isSmallDevice ? <MobileGallery /> : <DesktopGallery />;
 }
