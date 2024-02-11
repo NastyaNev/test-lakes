@@ -47,8 +47,8 @@ function About() {
         <span
           className={
             open === false && visible === true
-              ? "about__text-cover__dotts"
-              : "about__text-cover__dotts_disabled"
+              ? "about__text-cover__dots"
+              : "about__text-cover__dots_disabled"
           }
         >
           ...
@@ -56,6 +56,7 @@ function About() {
       </div>
       <button
         className={visible ? "about__button" : "about__button_disabled"}
+        title={open ? "Свернуть описание" : "Развернуть описание"}
         onClick={() => {
           setOpen(!open);
         }}

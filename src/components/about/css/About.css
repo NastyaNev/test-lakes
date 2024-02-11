@@ -46,10 +46,10 @@
   margin: 0;
   overflow: visible;
 }
-.about__text-cover__dotts {
+.about__text-cover__dots {
   line-height: 25px;
 }
-.about__text-cover__dotts_disabled {
+.about__text-cover__dots_disabled {
   display: none;
 }
 .about__button {
